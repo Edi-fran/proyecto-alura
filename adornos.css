@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%; /* O el ancho que prefieras */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row; /* Asegura que los divs internos se dispongan horizontalmente */
+    align-items: flex-start;
+    justify-content: space-between; /* Distribuye espacio entre los divs internos */
+}
+
+.header {
+    flex: 1; /* Toma el espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo */
+    background-color: #F3F5FC;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: xx-large;
+    color: blue;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #F3F5FC;
+    font-size: 1em;
+    color: blue;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.output {
+    flex: 1; /* Toma el espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo */
+    text-align: center; /* Centra el contenido */
+}
+
+.output p {
+    margin-top: 20px;
+    color: #333;
+    border-radius: 15px;
+}
+
+#outputImage {
+    max-width: 100%; /* Esto asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+.textos {
+    width: 577px;
+    height: 48px;
+    background: #d8dbde;
+    color: blue;
+}
+.buttons1{
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header .logo {
+        font-size: 20px;
+    }
+
+    .textos {
+        width: 100%;
+    }
+
+    .output {
+        margin-top: 10px;
+    }
+
+    .buttons, .buttons1, .output {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button, .buttons1 button {
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    .buttons1 {
+        margin-top: 10px;
+    }
+}
